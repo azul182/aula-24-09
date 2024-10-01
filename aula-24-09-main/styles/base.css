@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+:root{
+    --body-font :"Quicksand", sans-serif;
+    --color-blue-200: #00ffff;
+    --color-blue-400: #0c0c23;
+    --color-light: #fff;
+    --color-purple:hsla(287, 44%, 21%, .48);
+    --gradiente:  linear-gradient(120deg,
+    hsl(240deg 49% 9%) 0%,
+    hsl(245deg 47% 10%) 5%,
+    hsl(250deg 49% 12%) 12%,
+    hsl(254deg 48% 13%) 26%,
+    hsl(258deg 46% 14%) 75%,
+    hsl(264deg 45% 15%) 90%,
+    hsl(268deg 47% 16%) 96%,
+    hsl(274deg 46% 17%) 99%,
+    hsl(278deg 45% 19%) 100%,
+    hsl(283deg 45% 20%) 100%,
+    hsl(287deg 44% 21%) 100%);
+}
+
+*{
+    font-family: var(--body-font);
+}
+
+body{
+    background-image: var(--gradiente);
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-light);
+    /* transition: 1s; */
+}
+
+a:hover{
+    color: var(--color-blue-200);
+}
+
+.btn{
+    color: var(--color-blue-200);
+    border: 1px solid var(--color-blue-200);
+    border-radius: 10px;
+    padding: 7.5px 30px;
+}
+
+.btn:hover{
+    background-color: var(--color-light);
+    border-color: var(--color-light);
+    color: var(--color-blue-400);
+    transition: 0.7s;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.logo{
+    color: var(--color-blue-200);
+}
+
+.header-page{
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-page ul{
+    display: flex;
+    gap: 30px;
+}
+
+.hero{
+    border: 1px solid white;
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+}
+
