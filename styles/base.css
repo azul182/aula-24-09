@@ -32,7 +32,7 @@ body{
 a{
     text-decoration: none;
     color: var(--color-light);
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 a:hover{
@@ -41,7 +41,98 @@ a:hover{
 
 .btn{
     color: var(--color-blue-200);
+    border: 1px solid var(--color-blue-200);
+    border-radius: 10px;
+    padding: 7.5px 30px;
 }
+
+.btn:hover{
+    background-color: var(--color-light);
+    border-color: var(--color-light);
+    color: var(--color-blue-400);
+    transition: 0.7s;
+}
+
 ul, ol{
     list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    text-wrap: balance;
+}
+
+.logo{
+    color: var(--color-blue-200);
+}
+
+.header-page{
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-page ul{
+    display: flex;
+    gap: 30px;
+}
+
+.hero{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.hero-text, .hero-image{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light);
+}
+
+.hero-text h2{
+    font-size: 35px;
+    line-height: 1.05;
+}
+
+.color-title{
+    color: var(--color-blue-200);
+}
+
+.hero-text p{
+    width: 60%;
+    margin: 0 auto 40px;
+}
+
+.hero-image{
+    background-color: var(--color-purple);
+    border-radius: 80px 0;
+    min-width: 400px;
+}
+
+.hero-image img{
+    border-radius: 0 0 80px 80px;
+}
+
+.hero-image img:hover{
+    cursor: pointer;
+    animation: userPhoto 1s ease-in-out infinite;
+}
+
+@keyframes userPhoto {
+    0%,
+    100%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+        filter: drop-shadow(#883fc7 0 0 20px);
+    }
 }
